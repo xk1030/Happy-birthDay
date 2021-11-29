@@ -254,13 +254,13 @@
                                     time = t;
                                     S.Shape.switchShape(S.ShapeBuilder.letter(time));
                                 }
-                            }, 8000);
+                            }, 1000);
                         }
                         break;
                     default:
                         S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'HacPai' : current));
                 }
-            }, 2000, sequence.length);
+            }, 8000, sequence.length);
         }
         return {
             simulate: function (action) {
