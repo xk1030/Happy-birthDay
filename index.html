@@ -122,7 +122,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
             //想说的话
-            S.UI.simulate("亲爱的|生日快乐哟|felizaniversario|#countdown 3|#rectangle 15x15|#circle 12 |#time");
+            S.UI.simulate("#time|#countdown 3|小宝贝|生日快乐哟|felizaniversario|感谢你出现在我的生命里|愿时光温柔|多一点幸运|要记得，我一直都在|❤ ");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -254,7 +254,7 @@
                                     time = t;
                                     S.Shape.switchShape(S.ShapeBuilder.letter(time));
                                 }
-                            }, 1000);
+                            }, 3000);
                         }
                         break;
                     default:
